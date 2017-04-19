@@ -1,0 +1,9 @@
+<div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+    <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+      <a href="{{slide.link}}" target="_blank">
+          <h4>{{slide.name}}</h4>
+      </a>
+          <img class="img-responsive" ng-src="{{slide.img}}" >
+    </div>
+</div>
+

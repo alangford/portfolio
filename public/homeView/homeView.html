@@ -1,0 +1,91 @@
+
+
+<div class="spacer s0"></div>
+<div id="parallax1" class="parallaxParent">
+    <div style="background-image: url('https://static.pexels.com/photos/6548/cold-snow-winter-mountain.jpeg');"></div>
+</div>
+<div class="spacer s1">
+
+
+    <div class="col-sm-8">
+        <img class="img-responsive" src="../images/IMG_1245.JPG"/>
+    </div>
+    <div class="col-sm-4">
+        <img class="img-responsive" src="../images/FullSizeRender.jpg"/>
+    </div>
+    <div class="col-sm-4">
+        <img class="img-responsive" src="../images/FullSizeRender (1).jpg"/>
+    </div>
+
+    <div class="col-lg-12 line">
+    </div>
+
+    <div class="col-lg-12">
+        <h1 class="text-center">Projects</h1>
+        <h3 class="text-center">The following projects illustrate my coding experience for mobile apps and web applications. </h3>
+    </div>
+    <div class="col-lg-12 line">
+        <projects></projects>
+    </div>
+
+
+</div>
+<div class="spacer s0"></div>
+<div id="parallax2" class="parallaxParent">
+    <div style="background-image: url('https://static.pexels.com/photos/2855/landscape-mountains-nature-lake.jpg');"></div>
+</div>
+<div class="spacer s1">
+
+
+    <div class="col-lg-12 line">
+        <h1 class="text-center">About Me</h1>
+        <p class="text-center">I am currently perusing my passion to become a Software Developer. <br>
+            I'm a very good problem solver and I love to look at and analyze code to find bugs in software.</p>
+        <p class="text-center">
+            I have attended DevMountain's full time Web immersive program and now I have technical expirience in NodeJS, AngularJS and postgresSQL.
+            <br>I will be going back to collage to further increase my knowlege in the coding field.
+        </p>
+        <button class="btn center-block buttons">About</button>
+    </div>
+
+
+    <div class="col-lg-6">
+        <img src="https://avatars3.githubusercontent.com/u/19789036?v=3&s=460" class="img-responsive">
+    </div>
+    <div class="col-lg-6">
+        <h1 class="text-center">Contact</h1><br>
+        <h3 class="text-center">a.b.l.2142@gmail.com</h3>
+        <h3 class="text-center">801-694-7838</h3>
+        <a target="_blank"  href="https://github.com/bolty2142"><button class="btn center-block buttons">GitHub</button></a>
+        <a target="_blank" href="https://www.linkedin.com/in/andrewbeebelangford/"><button class="btn center-block buttons">Linkdin</button></a>
+        <button ui-sref="resume" class="btn center-block buttons">Resume</button>
+    </div>
+
+
+
+</div>
+<div class="spacer s0"></div>
+<div id="parallax3" class="parallaxParent">
+    <div style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c5/Moraine_Lake_17092005.jpg');"></div>
+</div>
+<div class="spacer s2"></div>
+<script>
+    // init controller
+    var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
+
+    // build scenes
+    new ScrollMagic.Scene({triggerElement: "#parallax1"})
+        .setTween("#parallax1 > div", {y: "80%", ease: Linear.easeNone})
+        .addIndicators()
+        .addTo(controller);
+
+    new ScrollMagic.Scene({triggerElement: "#parallax2"})
+        .setTween("#parallax2 > div", {y: "80%", ease: Linear.easeNone})
+        .addIndicators()
+        .addTo(controller);
+
+    new ScrollMagic.Scene({triggerElement: "#parallax3"})
+        .setTween("#parallax3 > div", {y: "80%", ease: Linear.easeNone})
+        .addIndicators()
+        .addTo(controller);
+</script>

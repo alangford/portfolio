@@ -1,0 +1,33 @@
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.line {border-bottom: solid black 2px;
+    padding-bottom: 3vh;
+}
+.buttons{
+    background-color: transparent;
+    border: solid 1px black;
+}
+a{
+    color: black;
+}
+/* mouse over link */
+a:hover {
+    color: black;
+}
+
+/* selected link */
+a:active {
+    color: black;
+}
+
+.parallaxParent {
+    height: 100vh;
+    overflow: hidden;
+}
+.parallaxParent > * {
+    height: 200%;
+    position: relative;
+    top: -100%;
+}
